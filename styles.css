@@ -1,0 +1,68 @@
+body {
+    display: grid;
+    background-color: antiquewhite;    
+}
+
+.title {
+    transition: 200ms;
+    font-size: 600%;
+    color: rgb(60, 60, 60);
+}
+
+.title2 {
+    color: red;
+    font-size: 30%;
+}
+
+.title:hover , .title.focus , .title:active {
+    color: black;
+}
+
+.mainBox {
+    animation: fadeIn 2s normal forwards;
+    opacity: 0%;
+    margin-top: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        transform: scale(0);
+        opacity: 0%;
+    }
+    to {
+        transform: scale(1);
+        opacity: 100%;
+    }
+}
+
+.one , .two {
+    z-index: 5;
+    border-radius: 20px;
+    width: 96%;
+    height: 700px;
+}
+
+.one {
+    transform: rotate(2deg);
+    background-color: pink;
+}
+
+.two {
+    margin-top: -700px;
+    transform: rotate(-5deg);
+    background-color: rgb(185, 239, 213);
+}
+
+.editor {
+    color: blue;
+    font-family: Kristen ITC;
+    font-size: 30px;
+    margin-top: 20px;
+    z-index: 2;
+    position: absolute;
+    width: 95%;
+    height: 700px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
